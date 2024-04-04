@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "428637376737",
+    "project_id": "olx-frebase",
+    "storage_bucket": "olx-frebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:428637376737:android:04ebe1132585f0c9c7a7a0",
+        "android_client_info": {
+          "package_name": "com.example.olxfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "428637376737-ivvglai73s1ghv10rpr8jc0utu868c6s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.olxfirebase",
+            "certificate_hash": "8817ffccd40bd53a79b50029b899829b137f7ac3"
+          }
+        },
+        {
+          "client_id": "428637376737-l4f96pjh72r8qoog7ov9giikk30ik64p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4H-xBRlPtrdZNokYVz57GR8c9M4SU6J8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "428637376737-l4f96pjh72r8qoog7ov9giikk30ik64p.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "428637376737-03r17pn6i2n02vqd6er8dgtt6k0nm8e7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.olxfirebase"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
