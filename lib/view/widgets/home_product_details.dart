@@ -46,10 +46,6 @@ class HomeCarContainer extends StatelessWidget {
           textPoppins(
               name: product.carName, fontweight: FontWeight.bold, fontsize: 16),
           SizedBox(height: size.height * .01),
-          textPoppins(
-              name: '${product.km} Kms',
-              fontweight: FontWeight.w500,
-              fontsize: 12),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [

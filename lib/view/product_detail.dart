@@ -66,11 +66,7 @@ class CarDetailsScreen extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      carDetailsText(
-                          value: '$km Km',
-                          color: Colors.black54,
-                          fontWeight: FontWeight.w600,
-                          fontsize: 16),
+                     
                       carDetailsText(
                           value: date,
                           color: Colors.black54,

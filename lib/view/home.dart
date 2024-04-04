@@ -1,4 +1,3 @@
-import 'package:lottie/lottie.dart';
 import 'package:flutter/material.dart';
 import 'package:olxfirebase/controller/authentication_provider.dart';
 import 'package:olxfirebase/controller/product_provider.dart';
@@ -115,7 +114,7 @@ class HomeScreen extends StatelessWidget {
                                   builder: (context) => CarDetailsScreen(
                                     carName: cars.carName,
                                     description: cars.description,
-                                    km: cars.km,
+                                   // km: cars.km,
                                     price: cars.price,
                                     image: NetworkImage(cars.image.toString()),
                                     date: cars.date,

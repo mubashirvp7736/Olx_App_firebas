@@ -43,8 +43,7 @@ class AdminAddDataScreen extends StatelessWidget {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                               
+                            children: [                              
                               textAbel(
                                 name: 'Add Product',
                                 fontsize: 30,
@@ -77,9 +76,11 @@ class AdminAddDataScreen extends StatelessWidget {
                                                           value.pickedImage!),
                                                       fit: BoxFit.contain,
                                                     )
-                                                  : const DecorationImage(
+                                                  : const 
+                                                  
+                                                  DecorationImage(
                                                       image: AssetImage(
-                                                          'assets/image_add.png'),
+                                                          'assets/addimage.jpg'),
                                                       fit: BoxFit.contain,
                                                     ),
                                             ),
@@ -96,26 +97,26 @@ class AdminAddDataScreen extends StatelessWidget {
                                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                   children: [
                                     CustomTextFormField(
-                                      labelText: 'Car Name',
+                                      labelText: 'Product Name',
                                       controller: carProvider.carNameController,
                                       enabledBorder: inputBorderColor,
                                       focusedBorder: inputBorderColor,
                                       focusErrorBorder: inputBorderColor,
-                                      validateMsg: 'Enter CarName',
+                                      validateMsg: 'Enter ProductName',
                                     ),
-                                    CustomTextFormField(
-                                      labelText: 'Kms',
-                                      keyboardType: TextInputType.number,
-                                      inputFormatters: [
-                                        FilteringTextInputFormatter.allow(
-                                            RegExp(r'[0-9]'))
-                                      ],
-                                      controller: carProvider.kmController,
-                                      enabledBorder: inputBorderColor,
-                                      focusedBorder: inputBorderColor,
-                                      focusErrorBorder: inputBorderColor,
-                                      validateMsg: 'Enter Km',
-                                    ),
+                                    // CustomTextFormField(
+                                    //   labelText: 'Kms',
+                                    //   keyboardType: TextInputType.number,
+                                    //   inputFormatters: [
+                                    //     FilteringTextInputFormatter.allow(
+                                    //         RegExp(r'[0-9]'))
+                                    //   ],
+                                    //   controller: carProvider.kmController,
+                                    //   enabledBorder: inputBorderColor,
+                                    //   focusedBorder: inputBorderColor,
+                                    //   focusErrorBorder: inputBorderColor,
+                                    //   validateMsg: 'Enter Km',
+                                    // ),
                                     dateTextFormField(),
                                     CustomTextFormField(
                                       labelText: 'Description',
@@ -211,7 +212,7 @@ class AdminAddDataScreen extends StatelessWidget {
         carName: carProvider.carNameController.text,
         description: carProvider.descriptionController.text,
         price: int.parse(carProvider.priceController.text),
-        km: carProvider.kmController.text,
+      //  km: carProvider.kmController.text,
         date: carProvider.dateController.text,
         image: image,
         wishList: [],
