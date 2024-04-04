@@ -23,7 +23,7 @@ class WishListScreen extends StatelessWidget {
             children: [
               textPoppins(
                 name: 'wishlist',
-                fontsize: 25,
+                fontsize: 28,
                 fontweight: FontWeight.w600,
               ),
               Consumer<CarProvider>(
@@ -34,8 +34,8 @@ class WishListScreen extends StatelessWidget {
                         const SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2,
                       crossAxisSpacing: 10,
-                      mainAxisSpacing: 10,
-                      childAspectRatio: 0.75,
+                      mainAxisSpacing: 15,
+                      childAspectRatio: 0.7,
                     ),
                     shrinkWrap: true,
                     physics: const NeverScrollableScrollPhysics(),

@@ -4,6 +4,7 @@ import 'package:olxfirebase/controller/authentication_provider.dart';
 import 'package:olxfirebase/controller/product_provider.dart';
 import 'package:olxfirebase/view/add_product.dart';
 import 'package:olxfirebase/view/product_detail.dart';
+import 'package:olxfirebase/view/widgets/categorycard.dart';
 import 'package:olxfirebase/view/widgets/home_product_details.dart';
 import 'package:olxfirebase/view/widgets/home_widget.dart';
 import 'package:olxfirebase/view/widgets/textstyle_widget.dart';
@@ -47,6 +48,38 @@ class HomeScreen extends StatelessWidget {
         padding: const EdgeInsets.all(10.0),
         child: Column(
           children: [
+         const  SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                //padding: ,
+                child:
+                  Wrap(
+              spacing: 20, // Spacing between categories
+              runSpacing: 10, // Spacing between rows of categories
+              children: [
+                CategoryCard(
+                  category: 'Electronics',
+                  icon: Icons.phone_android,
+                ),
+                CategoryCard(
+                  category: 'Clothing',
+                  icon: Icons.shopping_bag,
+                ),
+                CategoryCard(
+                  category: 'Books',
+                 icon: Icons.menu_book,
+                ),
+                 CategoryCard(
+                  category: 'Bikes',
+                  icon: Icons.directions_bike, // Icon for Bikes
+                ),
+                 CategoryCard(
+                  category: 'Kitchen ',
+                  icon: Icons.kitchen, // Icon for Kitchen Things
+                ),
+                // Add more CategoryCard widgets for other categories
+              ],
+            ),
+                ),SizedBox(height:15),
             Expanded(
               child: Consumer<CarProvider>(
                 builder: (context, carValue, child) {
@@ -60,7 +93,7 @@ class HomeScreen extends StatelessWidget {
                         scrollDirection: Axis.vertical,
                         child: Column(
                           children: [
-                             Lottie.asset('assets/no available cars.json'),
+                            // Lottie.asset('assets/no available cars.json'),
                             textPoppins(name: 'SEARCHED CAR IS NOT AVAILABLE')
                           ],
                         ),
